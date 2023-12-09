@@ -1,0 +1,22 @@
+{
+  "name": "universal-messenger",
+  "version": "1.0.0",
+  "description": "All your messages in one place.",
+  "scripts": {
+    "web": "npm run dev --workspace=web",
+    "web:build": "npm run build --workspace=web",
+    "web:start": "npm run start --workspace=web",
+    "web:lint": "npm run lint --workspace=web"
+  },
+  "author": "Knoddy",
+  "license": "ISC",
+  "private": true,
+  "workspaces": [
+    "packages/config",
+    "packages/database",
+    "packages/realtime",
+    "packages/tsconfig",
+    "apps/server",
+    "apps/web"
+  ]
+}

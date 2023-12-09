@@ -1,0 +1,44 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prettier": "config",
+  "dependencies": {
+    "@next/font": "13.1.2",
+    "@types/node": "18.11.18",
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.10",
+    "clsx": "^1.2.1",
+    "database": "*",
+    "dayjs": "^1.11.7",
+    "eslint": "8.32.0",
+    "eslint-config-next": "13.1.2",
+    "next": "13.1.2",
+    "next-superjson-plugin": "^0.5.4",
+    "pusher": "^5.1.2",
+    "pusher-js": "^8.0.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "superjson": "^1.12.2",
+    "tailwind-scrollbar": "^2.1.0",
+    "tailwindcss-brand-colors": "^0.3.3",
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "config": "*",
+    "eslint-plugin-prettier": "^4.2.1",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.3",
+    "prettier-plugin-tailwindcss": "^0.2.1",
+    "tailwindcss": "^3.2.4",
+    "tsconfig": "*"
+  }
+}

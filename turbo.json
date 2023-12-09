@@ -1,0 +1,45 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [
+    "**/.env.*local",
+    ".env"
+  ],
+  "globalEnv": [
+    "NODE_ENV"
+  ],
+  "pipeline": {
+    "build": {
+      "dependsOn": [
+        "^build"
+      ],
+      "outputs": [
+        "dist/**",
+        ".next/**"
+      ]
+    },
+    "db:migrate:deploy": {},
+    "db:push": {},
+    "db:seed": {},
+    "dev": {
+      "cache": false,
+      "persistent": false,
+      "env": [
+        "BOT_TOKEN",
+        "IG_USERNAME",
+        "IG_PASSWORD",
+        "PORT",
+        "PUSHER_APP_ID",
+        "NEXT_PUBLIC_PUSHER_KEY",
+        "PUSHER_SECRET",
+        "NEXT_PUBLIC_PUSHER_CLUSTER",
+        "NEXT_PUBLIC_PORTAL_URL"
+      ]
+    },
+    "generate": {
+      "dependsOn": [
+        "^generate"
+      ]
+    },
+    "lint": {}
+  }
+}
